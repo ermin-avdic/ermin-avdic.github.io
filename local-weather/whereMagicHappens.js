@@ -11,8 +11,18 @@ $(document).ready(function(){
 
   $.getJSON(api, function(weatherData){
     $("#location").text(weatherData.name);
-    $("#degrees").text(weatherData.main.temp);
+    $("#degrees").text(weatherData.main.temp + " K");
     $("#weather").text(weatherData.weather[0].main);
+    $(".button").click(function () {
+      if ($("#degrees").text() === weatherData.main.temp + " K") {
+         $("#degrees").text(weatherData.main.temp - 273.15 + " °C");
+         $(".button").text("Convert to Kelvin");
+      } else {
+        $("#degrees").text(weatherData.main.temp + " K");
+        $(".button").text("Convert to Celsius");
+      }
+    });
+
 
     if (weatherData.weather[0].id >= 200 && weatherData.weather[0].id <= 232) {
       $("div#grmljavina").addClass("icon thunder-storm");
