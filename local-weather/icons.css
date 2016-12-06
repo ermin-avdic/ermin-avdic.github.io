@@ -13,13 +13,6 @@ body {
   background-color: currentColor;
 }
 
-h1 {
-  margin-bottom: 1.375em;
-  color: #fff;
-  font-weight: 100;
-  font-size: 2em;
-  text-transform: uppercase;
-}
 p,
 a {
   color: rgba(255,255,255,0.3);
