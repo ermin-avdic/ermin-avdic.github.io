@@ -9,12 +9,12 @@ $(document).ready(function () {
       async: false,
       dataType: "json",
       success: function (data) {
-        console.log(data[1][0]);
-        console.log(data[2][0]);
-        console.log(data[3][0]);
+        for (var i = 0; i < data[1].length; i++) {
+          
+        }
       },
       error: function (error) {
-        alert("Error");
+        alert("Error! Please contact me so i could be able to fix error.");
       }
     });
 
