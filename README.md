@@ -2,4 +2,4 @@
 
 <a href="https://ermin-avdic.github.io/Quota/">Quote machine</a><br>
 <a href ="https://ermin-avdic.github.io/local-weather/">Weather App</a>  <strong>(You have to approve to load unsecure script)</strong><br>
-<a href="https://ermin-avdic.github.io/wikipedia-viewer/">Wikipedia Viewer</a> <strong>Project not completed yet</strong>
+<a href="https://ermin-avdic.github.io/wikipedia-viewer/">Wikipedia Viewer</a> <strong>Still need to add "Enter" functionality to input form.</strong>
