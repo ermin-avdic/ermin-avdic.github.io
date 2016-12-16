@@ -18,6 +18,7 @@ h2, h3
   color: white
 
 .button-search
+  margin-top: 15px
   background-color: rgba(29, 161, 242, 1)
   border: none
   color: white
@@ -32,64 +33,22 @@ h2, h3
 .button-search:hover
   background-color: rgba(29, 161, 242, 0.7)
 
-.button
-  display: inline-block
-  border-radius: 4px
-  background-color: rgba(29, 161, 242, 1)
-  border: none
-  color: #FFFFFF
-  text-align: center
-  font-size: 20px
-  padding: 16px
-  width: 210px
-  transition: all 0.5s
-  cursor: pointer
-  margin: 5px
-  vertical-align: middle
-
-.button span
-  cursor: pointer
-  display: inline-block
-  position: relative
-  transition: 0.5s
-
-
-.button span:after
-  content: '\00bb'
-  position: absolute
-  opacity: 0
-  top: 0
-  right: -20px
-  transition: 0.5s
-
-.button:hover
-  background-color: rgba(29, 161, 242, 0.7)
-
-
-.button:hover span
-  padding-right: 25px
-
-
-.button:hover span:after
-  opacity: 1
-  right: 0
-
 input[type=text]
   width: 220px
   box-sizing: border-box
   border: 2px solid #ccc
   border-radius: 4px
   font-size: 16px
-  padding: 12px 20px 12px 12px
+  padding: 12px 20px 12px 40px
+  background-color: white
+  background-image: url("search.png")
+  background-repeat: no-repeat
+  background-position: 10px 10px
   -webkit-transition: width 0.4s ease-in-out
   transition: width 0.4s ease-in-out
 
 input[type=text]:focus
   width: 70%
-  background-color: white
-  background-image: url("search.png")
-  background-repeat: no-repeat
-  background-position: 98%
 
 ul
   list-style: none
