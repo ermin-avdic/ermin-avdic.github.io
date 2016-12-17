@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("button#search").click(function () {
+  function wikipedia () {
     var userInput = $("#get").val();
     var api = "https://en.wikipedia.org/w/api.php?action=opensearch&search="+userInput+"&format=json&callback=?";
 
@@ -19,10 +19,11 @@ $(document).ready(function () {
         alert("Error! Please contact me so i could be able to fix error.");
       }
     });
-  });
-  $("#get").keypress(function (e) {
-    if (e.which == 13) {
-      $("#search").click();
+  }
+  $("#get").keypress(function () {
+    if (event.which == 13) {
+      wikipedia();
     }
   });
+  $("#search").click(wikipedia);
 });
