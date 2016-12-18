@@ -13,7 +13,7 @@ $(document).ready(function () {
         for (var i = 0; i < data[1].length; i++) {
           $("#results").prepend("<li><a href="+data[3][i]+">"+data[1][i]+"</a><p>"+data[2][i]+"</p></li>");
         }
-        $(userInput).val("");
+        $("input[name='search']").val("");
       },
       error: function () {
         alert("Error! Please contact me")
@@ -22,10 +22,11 @@ $(document).ready(function () {
   }
 
   $("#search").click(wikipedia);
-  $("#get").keypress(function (key) {
-    if (key.keyCode == 13) {
-      //console.log(key.keyCode);
+  $("#get").keypress(function () {
+    if (event.keyCode == 13) {
+      event.preventDefault();
       wikipedia();
+      $("input[name='search']").blur();
     }
   });
 });
