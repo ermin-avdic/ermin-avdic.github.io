@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  function wikipedia () {
-    var userInput = $("#get").val();
+  function wikipedia() {
+    var userInput = $("input[name='search']").val();
     var api = "https://en.wikipedia.org/w/api.php?action=opensearch&search="+userInput+"&format=json&callback=?";
 
     $.ajax({
@@ -13,17 +13,19 @@ $(document).ready(function () {
         for (var i = 0; i < data[1].length; i++) {
           $("#results").prepend("<li><a href="+data[3][i]+">"+data[1][i]+"</a><p>"+data[2][i]+"</p></li>");
         }
-        $("#get").val("");
+        $(userInput).val("");
       },
-      error: function (error) {
-        alert("Error! Please contact me so i could be able to fix error.");
+      error: function () {
+        alert("Error! Please contact me")
       }
     });
   }
-  $("#get").keypress(function () {
-    if (event.which == 13) {
+
+  $("#search").click(wikipedia);
+  $("#get").keypress(function (key) {
+    if (key.keyCode == 13) {
+      //console.log(key.keyCode);
       wikipedia();
     }
   });
-  $("#search").click(wikipedia);
 });
