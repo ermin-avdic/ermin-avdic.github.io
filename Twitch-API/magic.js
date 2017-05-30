@@ -19,9 +19,8 @@ $(document).ready(function() {
             $(".list").prepend("<li>"+lastword+"<a href='https://www.twitch.tv/"+lastword+"' target='_blank'> Twitch Link</a></li>");
           });
         } else if (streamsInfo.stream != null) {
-          console.log(streamsInfo.stream.channel.profile_banner.url);
           $("#online").click(function() {
-            $(".list").prepend("<li>"+streamsInfo.stream.channel.display_name+"<a href='"+streamsInfo.stream.channel.url+"' target='_blank'> Twitch Link</a></li>");
+            $(".list").prepend("<li id='"+streamsInfo.stream.channel.display_name+"'>"+streamsInfo.stream.channel.display_name+"<a href='"+streamsInfo.stream.channel.url+"' target='_blank'> Twitch Link</a></li>");
           });
         }
       }
@@ -30,6 +29,11 @@ $(document).ready(function() {
     $("#all").click(function() {
       $(".list").prepend("<li>"+userList+"<a href='https://www.twitch.tv/"+userList+"' target='_blank'> Twitch Link</a></li>");
     });
+
   }
+
+  $(document).on("click", ".list, li", function() {
+    $(".col-2").prepend("<h2>"+this.id+"</h2>");
+  });
 
 });
