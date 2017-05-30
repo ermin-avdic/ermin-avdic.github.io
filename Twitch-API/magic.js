@@ -1,14 +1,7 @@
 $(document).ready(function() {
   var usernames = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
-  var streams = "https://wind-bow.glitch.me/streams/";
 
-  $("#all").click(function() {
-    $(".list").html("");
-  });
-  $("#online").click(function() {
-    $(".list").html("");
-  });
-  $("#offline").click(function() {
+  $("#all, #online, #offline").click(function() {
     $(".list").html("");
   });
 
@@ -23,18 +16,19 @@ $(document).ready(function() {
         if (streamsInfo.stream === null) {
           var lastword = streamsInfo._links.channel.split("/").pop();
           $("#offline").click(function() {
-            $(".list").prepend("<li>"+lastword+"</li>");
+            $(".list").prepend("<li>"+lastword+"<a href='https://www.twitch.tv/"+lastword+"' target='_blank'> Twitch Link</a></li>");
           });
         } else if (streamsInfo.stream != null) {
+          console.log(streamsInfo.stream.channel.profile_banner.url);
           $("#online").click(function() {
-            $(".list").prepend("<li>"+streamsInfo.stream.channel.display_name+"</li>");
+            $(".list").prepend("<li>"+streamsInfo.stream.channel.display_name+"<a href='"+streamsInfo.stream.channel.url+"' target='_blank'> Twitch Link</a></li>");
           });
         }
       }
     });
     const userList = usernames[i];
     $("#all").click(function() {
-      $(".list").prepend("<li>"+userList+"</li>");
+      $(".list").prepend("<li>"+userList+"<a href='https://www.twitch.tv/"+userList+"' target='_blank'> Twitch Link</a></li>");
     });
   }
 
