@@ -12,8 +12,8 @@ def instagram():
     username = browser.find_element_by_class_name("_kp5f7")
     password = browser.find_element_by_css_selector("._1mdqd")
 
-    username.send_keys("classisforever1")
-    password.send_keys("gram14,.")
+    username.send_keys("")
+    password.send_keys("")
 
     login=browser.find_element_by_css_selector("._ah57t")
     login.click()
