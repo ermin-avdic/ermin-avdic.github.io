@@ -1,0 +1,5 @@
+Navigate to project files,
+pip install -r requirements.txt,
+python example.py
+
+Links to each image will be provided in img_links file.
