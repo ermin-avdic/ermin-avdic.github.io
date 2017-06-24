@@ -15,12 +15,12 @@ def instagram():
     username.send_keys("")
     password.send_keys("")
 
-    login=browser.find_element_by_css_selector("._ah57t")
+    login = browser.find_element_by_css_selector("._ah57t")
     login.click()
 
     browser.get("https://www.instagram.com/markwahlberg/")
 
-    loadMore= browser.find_element_by_css_selector("._8imhp")
+    loadMore = browser.find_element_by_css_selector("._8imhp")
     loadMore.click()
 
     i = 1

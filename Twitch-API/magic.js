@@ -20,7 +20,8 @@ $(document).ready(function() {
           });
         } else if (streamsInfo.stream != null) {
           $("#online").click(function() {
-            $(".list").prepend("<li id='"+streamsInfo.stream.channel.display_name+"'>"+streamsInfo.stream.channel.display_name+"<a href='"+streamsInfo.stream.channel.url+"' target='_blank'> Twitch Link</a></li>");
+            element = "<li id='"+streamsInfo.stream.channel.display_name+"'>"+streamsInfo.stream.channel.display_name+"<a href='"+streamsInfo.stream.channel.url+"' target='_blank'> Twitch Link</a></li>";
+            $(".list").append(element);
           });
         }
       }
@@ -29,11 +30,12 @@ $(document).ready(function() {
     $("#all").click(function() {
       $(".list").prepend("<li>"+userList+"<a href='https://www.twitch.tv/"+userList+"' target='_blank'> Twitch Link</a></li>");
     });
-
   }
 
-  $(document).on("click", ".list, li", function() {
-    $(".col-2").prepend("<h2>"+this.id+"</h2>");
-  });
+  /*$(".list, li").click(function () {
+    $(".col-2").html("");
+    $(".col-2").prepend("<iframe src='http://player.twitch.tv/?channel=ESL_SC2' height='400' width='800' frameborder='0' scrolling='no' allowfullscreen='true'></iframe>");
+    alert($(this).attr("id"));
+  });*/
 
 });
