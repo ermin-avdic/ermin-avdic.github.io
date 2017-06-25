@@ -16,26 +16,26 @@ $(document).ready(function() {
         if (streamsInfo.stream === null) {
           var lastword = streamsInfo._links.channel.split("/").pop();
           $("#offline").click(function() {
-            $(".list").prepend("<li>"+lastword+"<a href='https://www.twitch.tv/"+lastword+"' target='_blank'> Twitch Link</a></li>");
+            $(".list").prepend("<li id="+lastword+">"+lastword+"<a href='https://www.twitch.tv/"+lastword+"' target='_blank'> Twitch Link</a></li>");
           });
         } else if (streamsInfo.stream != null) {
           $("#online").click(function() {
-            element = "<li id='"+streamsInfo.stream.channel.display_name+"'>"+streamsInfo.stream.channel.display_name+"<a href='"+streamsInfo.stream.channel.url+"' target='_blank'> Twitch Link</a></li>";
-            $(".list").append(element);
+            $(".list").append("<li id='"+streamsInfo.stream.channel.display_name+"'>"+streamsInfo.stream.channel.display_name+"<a href='"+streamsInfo.stream.channel.url+"' target='_blank'> Twitch Link</a></li>");
           });
         }
       }
     });
     const userList = usernames[i];
     $("#all").click(function() {
-      $(".list").prepend("<li>"+userList+"<a href='https://www.twitch.tv/"+userList+"' target='_blank'> Twitch Link</a></li>");
+      $(".list").prepend("<li id="+userList+">"+userList+"<a href='https://www.twitch.tv/"+userList+"' target='_blank'> Twitch Link</a></li>");
     });
+
   }
 
-  /*$(".list, li").click(function () {
-    $(".col-2").html("");
-    $(".col-2").prepend("<iframe src='http://player.twitch.tv/?channel=ESL_SC2' height='400' width='800' frameborder='0' scrolling='no' allowfullscreen='true'></iframe>");
-    alert($(this).attr("id"));
-  });*/
+  $(".list, li").click(function (event) {
+    var id = event.target.id;
+    $("#player").html("");
+    $("#player").prepend("<iframe src='http://player.twitch.tv/?channel="+id+"' height='400' width='800' frameborder='0' scrolling='no' allowfullscreen='true'></iframe>");
+  });
 
 });
