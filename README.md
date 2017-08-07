@@ -1,4 +1,4 @@
-<a href="https://www.linkedin.com/in/ermin-avdic/">Quote machine</a><br>
+<a href="https://www.linkedin.com/in/ermin-avdic/">LinkedIn Profile</a><br>
 
 <h1>List of my projects:</h1>
 <a href="https://ermin-avdic.github.io/Quota/">Quote machine</a><br>
