@@ -1,8 +1,8 @@
 $circle-size: 120px;
 $circle-background: #c2c2c2;
-$circle-color: #2db8e8;
-$inset-size: 105px;
-$inset-color: #fff;
+$circle-color: pink;
+$inset-size: 115px;
+$inset-color: #f5f5f5;
 $transition-length: 1.5s;
 
 .ko-progress-circle {
@@ -35,9 +35,9 @@ $transition-length: 1.5s;
 		margin-top:  ($circle-size - $inset-size)/2;
     line-height: $inset-size;
     text-align: center;
-
 		background-color: $inset-color;
 		border-radius: 50%;
+		font-size: 20px
 	}
 
 	$i: 1;
