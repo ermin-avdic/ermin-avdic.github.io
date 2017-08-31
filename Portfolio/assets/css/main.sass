@@ -13,6 +13,19 @@ nav
       color: $primary
       background-color: transparent
 
+.button-collapse
+  position: relative
+  div
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    span
+      display: block
+      margin: 3px 0
+      background: $primary
+      width: 25px
+      height: 3px
+
 .brand-logo
   font-weight: 700
   color: $primary !important
@@ -98,3 +111,13 @@ nav
 
 .nodejs
   background-color: #8bc34a !important
+
+@media screen and (max-width: 425px)
+  .brand-logo
+    font-size: 1.7rem !important
+@media screen and (max-width: 350px)
+  .brand-logo
+    font-size: 1.5rem !important
+@media screen and (max-width: 310px)
+  .brand-logo
+    font-size: 1.3rem !important
