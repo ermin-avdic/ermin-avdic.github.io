@@ -8,16 +8,6 @@
   <link rel="stylesheet" href="assets/css/loader.min.css">
   <link rel="stylesheet" href="assets/css/main.min.css">
   <title>Portfolio</title>
-
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105809604-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
-
-    gtag('config', 'UA-105809604-1');
-  </script>
 </head>
 <body>
 
@@ -27,24 +17,24 @@
     <nav>
       <div class="container">
           <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Ermin Avdic</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse valign-wrapper"><i class="material-icons">
+            <a href="#landing-page" class="brand-logo">Ermin Avdic</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse valign-wrapper"><i class="material-icons"></i>
               <div>
                 <span></span>
                 <span></span>
                 <span></span>
-              </div></i></a>
+              </div></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
       </div>
@@ -54,7 +44,7 @@
   <!--  Navbar end -->
   <!-- Landing page start -->
 
-    <div class="landing-page">
+    <div id="landing-page" class="landing-page scrollspy">
       <div class="overlay">
         <div class="container">
           <div class="welcome">
@@ -69,7 +59,7 @@
     <!-- Landing page end -->
     <!--  About Me start -->
 
-    <div class="container about">
+    <div id="about" class="container about scrollspy">
       <h3 class="center" >About Me</h3>
       <hr class="hr">
       <div class="row">
@@ -93,7 +83,7 @@
     <!--  About Me end -->
     <!--  Skills start -->
 
-    <div class="skills">
+    <div id="skills" class="skills scrollspy">
       <h3 class="center">Skills</h3>
       <hr class="hr">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, quaerat. <br> Lorem ipsum dolor sit amet, consectetur adipisicing</p>
@@ -166,13 +156,13 @@
     <!--  Skills end -->
     <!-- Portfolio start -->
 
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio scrollspy">
       <div class="container">
         <h3 class="center">Portfolio</h3>
         <p class="center">Showcase Of My Work</p>
         <hr class="hr">
         <div class="row thumbs">
-          <div class="col m4">
+          <div class="col m6 l4">
             <div class="thumb-unit">
               <a href="http://local-weather-api.surge.sh/" target="_blank">
                 <img class="responsive-img" src="assets/img/portfolio/localweather.jpg" alt="weather">
@@ -180,7 +170,7 @@
               </a>
             </div>
           </div>
-          <div class="col m4">
+          <div class="col m6 l4">
             <div class="thumb-unit">
               <a href="https://ermin-avdic.github.io/wikipedia-viewer/" target="_blank">
                 <img class="responsive-img" src="assets/img/portfolio/wikipediaviewer.jpg" alt="wikipediaviewer">
@@ -188,7 +178,7 @@
               </a>
             </div>
           </div>
-          <div class="col m4">
+          <div class="col m6 l4">
             <div class="thumb-unit">
               <a href="http://twitch-api.surge.sh/" target="_blank">
                 <img class="responsive-img" src="assets/img/portfolio/twitchapi.jpg" alt="twitchapi">
@@ -196,7 +186,7 @@
               </a>
             </div>
           </div>
-          <div class="col m4">
+          <div class="col m6 l4">
             <div class="thumb-unit">
               <a href="https://ermin-avdic.github.io/Color-Game/" target="_blank">
                 <img class="responsive-img" src="assets/img/portfolio/rgbgame.jpg" alt="rgbgame">
@@ -204,7 +194,7 @@
               </a>
             </div>
           </div class="thumb-unit">
-          <div class="col m4">
+          <div class="col m6 l4">
             <div class="thumb-unit">
               <a href="https://ermin-avdic.github.io/TodoList/" target="_blank">
                 <img class="responsive-img" src="assets/img/portfolio/todoslist.jpg" alt="todoslist">
@@ -212,7 +202,7 @@
               </a>
             </div>
           </div>
-          <div class="col m4">
+          <div class="col m6 l4">
             <div class="thumb-unit">
               <a href="https://ermin-avdic.github.io/PatatapClone/" target="_blank">
                 <img class="responsive-img" src="assets/img/portfolio/patatapclone.jpg" alt="patatapclone">
@@ -238,7 +228,7 @@
     <!--  Parallax Quote end -->
     <!--  Contact start -->
 
-    <div class="contact">
+    <div id="contact" class="contact scrollspy">
       <h3 class="center">Contact</h3>
       <hr class="hr">
 
