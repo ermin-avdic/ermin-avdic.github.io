@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="main.min.css">
-  <title>Document</title>
+  <title>Javascript Calculator</title>
 </head>
 <body>
 
@@ -15,26 +15,30 @@
       <p>Javascript Calculator</p>
     </div>
     <div class="calculator">
-      <div id="ac">AC</div>
       <input type="text" name="" value="">
-      <span>7</span>
-      <span>8</span>
-      <span>9</span>
+      <span id="ac">AC</span>
+      <span id="square" class="operator">^2</span>
+      <span id="backspace"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
       <span class="operator">+</span>
-      <span>4</span>
-      <span>5</span>
-      <span>6</span>
+      <span class="digits">7</span>
+      <span class="digits">8</span>
+      <span class="digits">9</span>
       <span class="operator">-</span>
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
+      <span class="digits">4</span>
+      <span class="digits">5</span>
+      <span class="digits">6</span>
       <span class="operator">*</span>
-      <span>0</span>
-      <span>.</span>
-      <span class="operator">=</span>
+      <span class="digits">1</span>
+      <span class="digits">2</span>
+      <span class="digits">3</span>
       <span class="operator">/</span>
+      <span class="digits zero">0</span>
+      <span>.</span>
+      <span id="equals" class="operator">=</span>
     </div>
   </div>
 
+  <script src="https://use.fontawesome.com/7bd590b844.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,15 +1,18 @@
 body
   margin: 0
   font-family: Roboto
+  font-size: 18px
 
 .container
   margin: 15% auto 0 auto
-  width: 344px
+  width: 352px
+  overflow: hidden
 
 .heading
   text-align: left
   background: #2d4a7a
   padding: 10px
+  font-size: 16px
   color: white
   p
     margin: 0
@@ -22,7 +25,7 @@ body
   #ac
     display: inline-block
     width: 75px
-    margin: 2px
+    margin: 3px
     background: #ff9100
     padding: 5px 0
     border: 1px solid rgba(0, 0, 0, 0.3)
@@ -30,10 +33,14 @@ body
     color: white
     cursor: pointer
 
+  #backspace
+    background: #aa2a2a
+    color: white
+
   input
-    width: 229px
-    margin-bottom: 10px
-    padding: 10px 5px
+    width: 323px
+    margin: 0 3px 10px 3px
+    padding: 15px 5px
     font-size: 24px
     border: none
     outline: none
@@ -41,12 +48,15 @@ body
 
   span
     width: 75px
-    margin: 2px
+    margin: 3px
     padding: 5px 0
     float: left
     border: 1px solid rgba(0, 0, 0, 0.3)
     border-radius: 20px
     cursor: pointer
+
+  .zero
+    width: 158px
 
   .operator
     color: rgba(0, 0, 0, 0.8)
