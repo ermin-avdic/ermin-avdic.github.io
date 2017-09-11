@@ -7,4 +7,5 @@
 <a href="http://twitch-api.surge.sh/">Twitch API</a><br>
 <a href="https://ermin-avdic.github.io/Color-Game/">RGB Guessing Game</a><br>
 <a href="https://ermin-avdic.github.io/TodoList/">Todo List</a><br>
-<a href="https://ermin-avdic.github.io/PatatapClone/">Patatap Clone</a>
+<a href="https://ermin-avdic.github.io/PatatapClone/">Patatap Clone</a><br>
+<a href="https://ermin-avdic.github.io/Javascript%20Calculator/">Javascript Calculator</a>
