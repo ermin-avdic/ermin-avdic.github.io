@@ -17,6 +17,34 @@ td
   text-align: center
   font-size: 32px
 
+button
+  display: block
+  margin: 0 auto
+  color: #fff
+  border: solid 1px #4CAF50
+  outline: none
+  background-color: #4CAF50
+  font-size: 14px
+  padding: 15px 25px
+  letter-spacing: 2px
+  text-transform: uppercase
+  position: relative
+  overflow: hidden
+
+button .circle
+  position: absolute
+  border-radius: 50%
+  background-color: #fff
+  width: 100px
+  height: 100px
+  transform: translate(-50%, -50%) scale(0)
+  animation: scale .5s ease-out
+
+@keyframes scale
+  to
+    transform: translate(-50%, -50%) scale(3)
+    opacity: 0
+
 .vertical
   border-left: 1px solid black
   border-right: 1px solid black

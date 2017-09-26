@@ -3,6 +3,7 @@ var cspan = document.querySelectorAll(".choose span");
 var table = document.querySelector("table");
 var td = document.querySelectorAll("td");
 var ttt = "";
+var button = document.querySelector("button");
 
 for (var i = 0; i < cspan.length; i++) {
   cspan[i].addEventListener("click", function() {
@@ -34,3 +35,24 @@ function add() {
     });
   }
 }
+
+button.addEventListener("click", function(k) {
+  let x = k.clientX;
+  let y = k.clientY;
+
+  let buttonTop = k.target.offsetTop;
+  let buttonLeft = k.target.offsetLeft;
+
+  let xInside = x - buttonLeft;
+  let yInside = y - buttonTop;
+
+  let circle = document.createElement('span');
+  circle.classList.add('circle');
+  circle.style.top = yInside + 'px';
+  circle.style.left = xInside + 'px';
+
+  this.appendChild(circle);
+  setTimeout(() => {
+    circle.remove();
+  }, 500);
+});
