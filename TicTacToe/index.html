@@ -4,16 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700" rel="stylesheet">
   <link rel="stylesheet" href="main.min.css">
-  <title>TicTacToe</title>
+  <title>Tic Tac Toe</title>
 </head>
 <body>
 
-  <h1>TicTacToe</h1>
+  <h1>Tic Tac Toe</h1>
 
-  <table>
+  <div class="choose">
+    <p>What would you like to be <span id="cx">X</span> or <span id="co">O</span></p>
+  </div>
+
+  <table class="hidden">
     <tr>
-      <td>asdasd</td>
+      <td></td>
       <td class="vertical"></td>
       <td></td>
     </tr>
@@ -28,6 +33,8 @@
       <td></td>
     </tr>
   </table>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
