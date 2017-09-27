@@ -54,5 +54,6 @@ button.addEventListener("click", function(k) {
   this.appendChild(circle);
   setTimeout(() => {
     circle.remove();
+    window.location.reload(true);
   }, 500);
 });
