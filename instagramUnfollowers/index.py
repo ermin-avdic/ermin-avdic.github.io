@@ -125,34 +125,3 @@ with open('difference.txt', 'w') as f:
         f.write("%s\n" % userDifference)
 
 browser.quit()
-
-# followersCount = browser.find_elements_by_class_name("FPmhX")
-# followersCountList = []
-# for follower in followersCount:
-#     followersCountList.append(follower.text)
-#
-# # print("Followers list:")
-# # print(followersCountList)
-#
-#
-#
-# time.sleep(1)
-#
-#
-# i = 0
-# j = 0
-# while i < 1000:
-#     browser.execute_script("arguments[0].scrollTop = arguments[1];", scrollSecond, 100 + j)
-#     if j == 300:
-#         time.sleep(1)
-#     i += 1
-#     j += 10
-#
-# followingCount = browser.find_elements_by_class_name("FPmhX")
-# followingCountList = []
-# for following in followingCount:
-#     followingCountList.append(following.text)
-#
-# # print("Following list:")
-# # print(followingCountList)
-#
