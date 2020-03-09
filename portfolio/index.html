@@ -304,78 +304,94 @@
         </div>
       </div>
     </div>
-    <div id="contact">
-      <div class="container">
-        <p class="subheading">Kontaktirajte me</p>
-        <h1 class="heading">Kontakt<span class="divider"></span></h1>
+    <div class="overlay">
+      <div id="contact">
+        <div class="email-link">
+          <div>
+            <h3>
+              Napomena: <br />
+              Kontakt forma trenutno nije u funkciji. Kontaktirati me možete
+              putem linka ispod:
+            </h3>
+            <h1><a href="mailto:ermin_avdic@live.com">email</a></h1>
+          </div>
+        </div>
+        <div class="container">
+          <p class="subheading">Kontaktirajte me</p>
+          <h1 class="heading">Kontakt<span class="divider"></span></h1>
 
-        <form action="" method="POST">
-          <div class="form-container">
-            <div class="form">
-              <div class="name-section">
+          <form action="" method="POST">
+            <div class="form-container">
+              <div class="form">
+                <div class="name-section">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder=" "
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="label-name">
+                    <span class="content-name">Ime</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form">
+                <div class="email-section">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder=" "
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="email" class="label-name">
+                    <span class="content-name">Email</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form form-naslov">
+              <div class="naslov-section">
                 <input
                   type="text"
-                  name="name"
+                  name="naslov"
                   placeholder=" "
                   autocomplete="off"
                   required
                 />
-                <label for="name" class="label-name">
-                  <span class="content-name">Ime</span>
+                <label for="naslov" class="label-name">
+                  <span class="content-name">Naslov</span>
                 </label>
               </div>
             </div>
-            <div class="form">
-              <div class="email-section">
-                <input
-                  type="email"
-                  name="email"
+            <div class="form form-textarea">
+              <div class="textarea-section">
+                <textarea
+                  name="poruka"
+                  id="textarea"
                   placeholder=" "
-                  autocomplete="off"
                   required
-                />
-                <label for="email" class="label-name">
-                  <span class="content-name">Email</span>
+                ></textarea>
+                <label for="textarea" class="label-name">
+                  <span class="content-name">Poruka</span>
                 </label>
               </div>
             </div>
-          </div>
-          <div class="form form-naslov">
-            <div class="naslov-section">
-              <input
-                type="text"
-                name="naslov"
-                placeholder=" "
-                autocomplete="off"
-                required
-              />
-              <label for="naslov" class="label-name">
-                <span class="content-name">Naslov</span>
-              </label>
-            </div>
-          </div>
-          <div class="form form-textarea">
-            <div class="textarea-section">
-              <textarea
-                name="poruka"
-                id="textarea"
-                placeholder=" "
-                required
-              ></textarea>
-              <label for="textarea" class="label-name">
-                <span class="content-name">Poruka</span>
-              </label>
-            </div>
-          </div>
-          <button class="form-button">
-            Pošalji <img src="assets\img\send-button.svg" alt="" />
-          </button>
-        </form>
+            <button class="form-button">
+              Pošalji <img src="assets\img\send-button.svg" alt="" />
+            </button>
+          </form>
+        </div>
       </div>
     </div>
     <div id="footer">
-      <div class="container">
+      <div class="container footer-display">
         <p>Copyright All Rights Reserved.</p>
+        <p>
+          <a href="mailto:ermin_avdic@live.com">ermin_avdic@live.com</a
+          ><img src="assets\img\send-button.svg" alt="" />
+        </p>
       </div>
     </div>
 

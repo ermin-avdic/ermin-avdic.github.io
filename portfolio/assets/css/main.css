@@ -495,14 +495,54 @@ nav ul li a {
   background: white;
 }
 
+.overlay {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 #contact {
   background: #fafafac3;
   padding: 30px 0 130px 0;
   overflow: hidden;
+  position: relative;
+}
+
+#contact .container {
+  pointer-events: none;
 }
 
 #contact input, #contact textarea {
   background: #fafafac3;
+}
+
+.email-link {
+  text-align: center;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.email-link div {
+  padding-top: 150px;
+}
+
+.email-link h1 {
+  font-size: 3rem;
+}
+
+.email-link h1 a {
+  color: #168dff;
+  text-decoration: none;
+}
+
+.email-link h3 {
+  font-size: 1.5rem;
+  color: #313D41;
 }
 
 .form-container {
@@ -666,11 +706,33 @@ nav ul li a {
   background: #4488af;
   color: white;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #footer p {
   margin: 0;
   padding: 16px 0;
+}
+
+#footer p img {
+  width: 16px;
+  margin-bottom: -3px;
+  padding-left: 5px;
+}
+
+#footer a {
+  color: white;
+}
+
+.footer-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-active {
