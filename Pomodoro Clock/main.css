@@ -1,0 +1,50 @@
+body {
+  background: #584b4f;
+  font-family: Roboto;
+}
+
+h1 {
+  font-size: 44px;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.wrapper {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrapper div {
+  display: inline-block;
+  color: white;
+}
+
+.brln {
+  margin-right: 20px;
+}
+
+.tset {
+  margin-top: 0px;
+  font-size: 34px;
+}
+
+.minus, .plus {
+  cursor: pointer;
+}
+
+.timer {
+  font-weight: 400;
+  margin: 0 auto;
+  width: 300px;
+  border-radius: 50%;
+  border: solid 2px pink;
+  cursor: pointer;
+}
+
+.timer p {
+  font-size: 53px;
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

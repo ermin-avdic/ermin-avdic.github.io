@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.container {
+  margin: 15% auto 0 auto;
+  width: 352px;
+  overflow: hidden;
+}
+
+.heading {
+  text-align: left;
+  background: #2d4a7a;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.heading p {
+  margin: 0;
+}
+
+.calculator {
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+}
+
+.calculator #ac {
+  display: inline-block;
+  width: 75px;
+  margin: 3px;
+  background: #ff9100;
+  padding: 5px 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.calculator #backspace {
+  background: #aa2a2a;
+  color: white;
+}
+
+.calculator input {
+  width: 323px;
+  margin: 0 3px 10px 3px;
+  padding: 15px 5px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  direction: rtl;
+}
+
+.calculator span {
+  width: 75px;
+  margin: 3px;
+  padding: 5px 0;
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.calculator .zero {
+  width: 158px;
+}
+
+.calculator .operator {
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=main.css.map */
