@@ -32,7 +32,6 @@ api(`https://corona.lmao.ninja/v2/historical/${country}`)
 form.addEventListener("submit", e => {
   e.preventDefault();
   country = form.search.value.trim();
-  console.log(country);
   dates = [];
   casesDates = [];
   casesValues = [];
@@ -70,9 +69,7 @@ const cases = data => {
   const getCases = data => {
     const cases = data.timeline.cases;
     dates = Object.keys(cases);
-    console.log("datumi su: ", dates);
 
-    console.log(cases);
     const filtered = {};
     dates.forEach(date => {
       if (cases[date] > 0) {
@@ -81,7 +78,6 @@ const cases = data => {
       }
     });
     casesDates = Object.keys(filtered);
-    console.log("Ukupno: ", casesValues);
 
     chart = new Chart(linechart, {
       type: "line",
@@ -96,13 +92,13 @@ const cases = data => {
             data: casesValues,
             fill: false
           },
-          {
-            label: "Oporavljeni",
-            backgroundColor: "rgb(26, 173, 156)",
-            borderColor: "rgb(26, 173, 156)",
-            data: recoveredValues,
-            fill: false
-          },
+          // {
+          //   label: "Oporavljeni",
+          //   backgroundColor: "rgb(26, 173, 156)",
+          //   borderColor: "rgb(26, 173, 156)",
+          //   data: recoveredValues,
+          //   fill: false
+          // },
           {
             label: "Preminuli",
             backgroundColor: "rgb(188, 188, 188)",
@@ -114,7 +110,9 @@ const cases = data => {
       },
 
       // Configuration options go here
-      options: {}
+      options: {
+        responsive: true
+      }
     });
   };
   getCases(data);
@@ -134,7 +132,6 @@ const cases = data => {
     casesDates.forEach(date => {
       deathsValues.push(deaths[date]);
     });
-    console.log("deaths", deathsValues);
   };
   getDeaths(data);
 };
