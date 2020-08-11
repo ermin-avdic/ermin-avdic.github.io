@@ -148,6 +148,10 @@ nav ul li a {
   position: relative;
 }
 
+.main-content a {
+  color: white;
+}
+
 .description h1 {
   font-size: 5.9rem;
   font-weight: 700;
